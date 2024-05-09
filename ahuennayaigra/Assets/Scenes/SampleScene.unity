@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 812913434}
   - component: {fileID: 812913433}
   m_Layer: 0
-  m_Name: Terrain_0_0_20b7edb7-b203-4a92-b03e-904e55e2d82c
+  m_Name: limb.terrain.asset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
