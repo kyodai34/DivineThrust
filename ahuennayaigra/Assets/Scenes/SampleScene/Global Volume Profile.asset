@@ -67,10 +67,10 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.273
+    m_Value: 0.281
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.272
+    m_Value: 0.471
   rounded:
     m_OverrideState: 1
     m_Value: 0
@@ -89,7 +89,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.124
+    m_Value: 0.13
 --- !u!114 &-1710618986810721672
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -108,13 +108,13 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 0.9
   intensity:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.4
   scatter:
     m_OverrideState: 1
-    m_Value: 0.35
+    m_Value: 0.7
   clamp:
     m_OverrideState: 1
     m_Value: 65472
@@ -153,13 +153,12 @@ MonoBehaviour:
   - {fileID: -1710618986810721672}
   - {fileID: -4233525653523051116}
   - {fileID: 4084681882580075422}
-  - {fileID: 1775249364622432171}
-  - {fileID: 7307410406062807038}
   - {fileID: 5351893985782730916}
   - {fileID: -3331376972708611113}
   - {fileID: -6458919545783328748}
   - {fileID: 1981189031538201895}
---- !u!114 &1775249364622432171
+  - {fileID: 612390127498010119}
+--- !u!114 &612390127498010119
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,37 +167,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdfbdbb87d3286943a057f7791b43141, type: 3}
-  m_Name: ChannelMixer
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
   m_EditorClassIdentifier: 
   active: 1
-  redOutRedIn:
+  lift:
     m_OverrideState: 1
-    m_Value: 76
-  redOutGreenIn:
+    m_Value: {x: 0.8658864, y: 0.93931407, z: 1, w: -0.013812155}
+  gamma:
     m_OverrideState: 1
-    m_Value: -26
-  redOutBlueIn:
+    m_Value: {x: 0.87783325, y: 1, z: 0.9550674, w: 0.027624315}
+  gain:
     m_OverrideState: 1
-    m_Value: -11
-  greenOutRedIn:
-    m_OverrideState: 1
-    m_Value: -76
-  greenOutGreenIn:
-    m_OverrideState: 1
-    m_Value: 77
-  greenOutBlueIn:
-    m_OverrideState: 1
-    m_Value: 4
-  blueOutRedIn:
-    m_OverrideState: 1
-    m_Value: 108
-  blueOutGreenIn:
-    m_OverrideState: 1
-    m_Value: 35
-  blueOutBlueIn:
-    m_OverrideState: 1
-    m_Value: 119
+    m_Value: {x: 0.88307774, y: 0.9882895, z: 1, w: 0.33149168}
 --- !u!114 &1981189031538201895
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -232,8 +213,8 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.21792261
-          value: 0.3106383
+          time: 0.17515275
+          value: 0.6042553
           inSlope: 1
           outSlope: 1
           tangentMode: 0
@@ -241,8 +222,8 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.4765784
-          value: 0.5489361
+          time: 0.49694502
+          value: 0.6893617
           inSlope: 1
           outSlope: 1
           tangentMode: 0
@@ -250,7 +231,7 @@ MonoBehaviour:
           inWeight: 0
           outWeight: 0
         - serializedVersion: 3
-          time: 0.76374745
+          time: 0.7922607
           value: 0.7787234
           inSlope: 1
           outSlope: 1
@@ -480,31 +461,3 @@ MonoBehaviour:
   clamp:
     m_OverrideState: 0
     m_Value: 0.05
---- !u!114 &7307410406062807038
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
-  m_Name: ColorAdjustments
-  m_EditorClassIdentifier: 
-  active: 1
-  postExposure:
-    m_OverrideState: 1
-    m_Value: 2
-  contrast:
-    m_OverrideState: 1
-    m_Value: 8.4
-  colorFilter:
-    m_OverrideState: 1
-    m_Value: {r: 0.07863116, g: 0.8773585, b: 0.7307676, a: 1}
-  hueShift:
-    m_OverrideState: 0
-    m_Value: 0
-  saturation:
-    m_OverrideState: 1
-    m_Value: -2.6
